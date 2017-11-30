@@ -6,7 +6,7 @@ const SRC_PATH = path.join(__dirname, 'src')
 const BUILD_PATH = path.join(__dirname, 'build')
 
 module.exports = {
-  entry: path.join(SRC_PATH, 'index.jsx'),
+  entry: path.join(SRC_PATH, 'index.js'),
   output: {
     path: BUILD_PATH,
     filename: 'bundle.min.js'
