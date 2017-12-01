@@ -3,10 +3,10 @@ import {
   DEFAULT_BYE
 } from '../constants/default'
 
-export const defaultReducer = (state = {
+const defaultReducer = (state = {
   message: 'Hello World'
 }, action) => {
-  switch (state.action) {
+  switch (action.type) {
     case DEFAULT_HELLO: {
       return {...state, message: 'Hello World'}
     }
@@ -17,3 +17,5 @@ export const defaultReducer = (state = {
 
   return state
 }
+
+export default defaultReducer
