@@ -1,15 +1,13 @@
-const webpack = require('webpack')
 const path = require('path')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-const SRC_PATH = path.join(__dirname, 'src')
-const BUILD_PATH = path.join(__dirname, 'build')
+const SRC_PATH = path.join(__dirname, '../src')
+const BUILD_PATH = path.join(__dirname, '../build')
 
 module.exports = {
   entry: path.join(SRC_PATH, 'index.js'),
   output: {
     path: BUILD_PATH,
-    filename: 'bundle.min.js'
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -44,14 +42,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new UglifyJsPlugin()
-  ],
-  devServer: {
-    publicPath: '/',
-    contentBase: BUILD_PATH,
-    hot: true
   }
 }

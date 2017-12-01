@@ -1,11 +1,12 @@
 {
-  "name": "mels-boilerplate",
+  "name": "mels-react-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for React apps",
   "main": "src/index.jsx",
   "scripts": {
+    "start": "webpack-dev-server --open --config webpack/webpack.dev.js",
     "test": "mocha",
-    "devRun": "webpack-dev-server"
+    "build": "webpack --config webpack/webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
@@ -45,6 +46,7 @@
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.1.2",
     "webpack": "^3.9.1",
-    "webpack-dev-server": "^2.9.5"
+    "webpack-dev-server": "^2.9.5",
+    "webpack-merge": "^4.1.1"
   }
 }
