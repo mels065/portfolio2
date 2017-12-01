@@ -1,0 +1,2 @@
+export const DEFAULT_HELLO = 'DEFAULT_HELLO'
+export const DEFAULT_BYE = 'DEFAULT_BYE'
