@@ -1,6 +1,8 @@
 import {
   DEFAULT_HELLO,
-  DEFAULT_BYE
+  DEFAULT_BYE,
+  MESSAGE_HELLO,
+  MESSAGE_BYE
 } from '../constants/default'
 
 const defaultReducer = (state = {
@@ -8,10 +10,10 @@ const defaultReducer = (state = {
 }, action) => {
   switch (action.type) {
     case DEFAULT_HELLO: {
-      return {...state, message: 'Hello World'}
+      return {...state, message: MESSAGE_HELLO}
     }
     case DEFAULT_BYE: {
-      return {...state, message: 'Bye World'}
+      return {...state, message: MESSAGE_BYE}
     }
   }
 

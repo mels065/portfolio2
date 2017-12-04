@@ -1,9 +1,9 @@
 import { expect } from 'chai'
-import defaultReducer from '../default'
+import defaultReducer from '../src/reducers/default'
 import {
   DEFAULT_HELLO,
   DEFAULT_BYE
-} from '../../constants/default'
+} from '../src/constants/default'
 
 const defaultActions = {
   'INVALID': {
@@ -24,10 +24,12 @@ describe('defaultReducer', function () {
   })
 
   it('sets message state to "Hello World" when given DEFAULT_HELLO action', function () {
-    expect(defaultReducer(undefined, defaultActions.HELLO).message).to.equal('Hello World')
+    expect(defaultReducer('', defaultActions.HELLO).message)
+      .to.equal('Hello World')
   })
 
   it('sets message state to "Bye World" when given DEFAULT_BYE action', function () {
-    expect(defaultReducer(undefined, defaultActions.BYE).message).to.equal('Bye World')
+    expect(defaultReducer('', defaultActions.BYE).message)
+      .to.equal('Bye World')
   })
 })

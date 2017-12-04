@@ -4,13 +4,15 @@ import {
   Route
 } from 'react-router-dom'
 
+import VisibleDefault from '../../containers/VisibleDefault'
+
 import './style.scss'
 
 const App = () => (
   <Router>
     <div>
       <Route exact path='/'>
-        <div>Hello World</div>
+        <VisibleDefault />
       </Route>
     </div>
   </Router>
