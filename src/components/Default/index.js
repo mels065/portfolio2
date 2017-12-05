@@ -8,8 +8,8 @@ const Default = props => {
 
   return (
     <div className='default'>
-      <h2>{message}</h2>
-      <button onClick={
+      <h2 className='text-primary'>{message}</h2>
+      <button className='btn btn-primary' onClick={
         message === 'Hello World'
           ? onByeClick
           : onHelloClick

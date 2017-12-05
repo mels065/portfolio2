@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+
+h2 {
+  font-size: 65px;
+  margin-top: 80px;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
