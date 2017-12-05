@@ -1,5 +1,4 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
 
 import { NOT_FOUND_HEADING } from '../../constants/not-found'
 
@@ -12,6 +11,4 @@ const NotFound = () => (
   </div>
 )
 
-const NotFoundWithRouter = withRouter(NotFound)
-
-export default NotFoundWithRouter
+export default NotFound

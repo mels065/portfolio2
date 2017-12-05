@@ -5,7 +5,9 @@ import VisibleDefault from '../../containers/VisibleDefault'
 import './style.scss'
 
 const App = () => (
-  <VisibleDefault />
+  <div className='App'>
+    <VisibleDefault />
+  </div>
 )
 
 export default App
