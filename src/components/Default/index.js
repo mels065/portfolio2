@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import './style.scss'
+if (process.env.NODE_ENV !== 'TESTING') require('./style.scss')
 
 const Default = props => {
   const { message, onHelloClick, onByeClick } = props

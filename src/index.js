@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import App from './components/App'
 import store from './store'
 
-import './style.scss'
+if (process.env.NODE_ENV !== 'TESTING') require('./style.scss')
 
 ReactDOM.render(
   <Provider store={store}>

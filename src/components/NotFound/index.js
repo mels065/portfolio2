@@ -2,7 +2,7 @@ import React from 'react'
 
 import { NOT_FOUND_HEADING } from '../../constants/not-found'
 
-import './style.scss'
+if (process.env.NODE_ENV !== 'TESTING') require('./style.scss')
 
 const NotFound = () => (
   <div className='NotFound'>
