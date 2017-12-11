@@ -1,9 +1,9 @@
 import { expect } from 'chai'
-import defaultReducer from '../src/reducers/default'
+import defaultReducer from '../default'
 import {
   DEFAULT_HELLO,
   DEFAULT_BYE
-} from '../src/constants/default'
+} from '../../constants/default'
 
 const defaultActions = {
   'INVALID': {

@@ -3,11 +3,11 @@ import { expect } from 'chai'
 import {
   defaultHello,
   defaultBye
-} from '../src/actions/default'
+} from '../default'
 import {
   DEFAULT_HELLO,
   DEFAULT_BYE
-} from '../src/constants/default'
+} from '../../constants/default'
 
 describe('defaultHello action', function () {
   it('returns the correct action', function () {

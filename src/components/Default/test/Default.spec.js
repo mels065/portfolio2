@@ -3,11 +3,11 @@ import { shallow, mount } from 'enzyme'
 import { expect } from 'chai'
 import sinon from 'sinon'
 
-import Default from '../src/components/Default'
+import Default from '../../Default'
 import {
   MESSAGE_HELLO,
   MESSAGE_BYE
-} from '../src/constants/default'
+} from '../../../constants/default'
 
 describe('<Default />', function () {
   const props = {
