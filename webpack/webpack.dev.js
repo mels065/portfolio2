@@ -8,10 +8,16 @@ const BUILD_PATH = path.join(__dirname, '../build')
 module.exports = merge(
   common,
   {
+    output: {
+      filename: '[name].[hash].js'
+    },
     devtool: 'inline-source-map',
     devServer: {
-      contentBase: BUILD_PATH,
-      hot: true
+      host: 'localhost',
+      port: 3000,
+      historyApiFallback: true,
+      hot: true,
+      open: true
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin(),

@@ -1,13 +1,17 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const SRC_PATH = path.join(__dirname, '../src')
 const BUILD_PATH = path.join(__dirname, '../build')
 
 module.exports = {
-  entry: path.join(SRC_PATH, 'index.js'),
+  entry: {
+    app: [`${SRC_PATH}/index.js`],
+    vendor: ['semantic-ui-react']
+  },
   output: {
     path: BUILD_PATH,
-    filename: 'bundle.js'
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -42,5 +46,10 @@ module.exports = {
         ]
       }
     ]
-  }
-}
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: `public/index.html`
+    })
+  ]
+};
