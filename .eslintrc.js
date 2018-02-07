@@ -1,5 +1,5 @@
 module.exports = {
-  'extends': ['standard', 'standard-react'],
+  'extends': 'airbnb',
   'env': {
     'browser': true,
     'mocha': true

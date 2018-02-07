@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -6,7 +8,7 @@ const BUILD_PATH = path.join(__dirname, '../build')
 
 module.exports = {
   entry: {
-    app: [`${SRC_PATH}/index.js`],
+    app: [`${SRC_PATH}/index.jsx`],
     vendor: ['semantic-ui-react']
   },
   output: {
@@ -51,5 +53,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `public/index.html`
     })
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }
 };

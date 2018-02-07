@@ -1,19 +1,22 @@
-import { configure } from 'enzyme'
-import { JSDOM } from 'jsdom'
-import Adapter from 'enzyme-adapter-react-15'
+import { configure } from 'enzyme';
+import { JSDOM } from 'jsdom';
+import Adapter from 'enzyme-adapter-react-15';
 
-configure({ adapter: new Adapter() })
+import register from 'ignore-styles';
+register(['.scss']);
 
-process.env.NODE_ENV = 'TESTING'
+configure({ adapter: new Adapter() });
 
-const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>')
-const win = dom.window
-const doc = win.document
+process.env.NODE_ENV = 'test';
 
-global.document = doc
-global.window = win
+const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
+const win = dom.window;
+const doc = win.document;
+
+global.document = doc;
+global.window = win;
 
 for (let key in window) {
-  if (!window.hasOwnProperty(key) || key in global) continue
-  global[key] = window[key]
+  if (!window.hasOwnProperty(key) || key in global) continue;
+  global[key] = window[key];
 }

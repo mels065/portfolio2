@@ -1,26 +1,26 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import {
   defaultHello,
-  defaultBye
-} from '../../actions/default'
-import Default from '../../components/Default'
+  defaultBye,
+} from '../../actions/Default';
+import Default from '../../components/modules/Default';
 
-const mapStateToProps = state => {
-  return {
-    message: state.default.message
+const mapStateToProps = state => (
+  {
+    message: state.default.message,
   }
-}
+);
 
-const mapDispatchToProps = dispatch => {
-  return {
+const mapDispatchToProps = dispatch => (
+  {
     onHelloClick: () => dispatch(defaultHello()),
-    onByeClick: () => dispatch(defaultBye())
+    onByeClick: () => dispatch(defaultBye()),
   }
-}
+);
 
 const VisibleDefault = connect(
   mapStateToProps,
-  mapDispatchToProps
-)(Default)
+  mapDispatchToProps,
+)(Default);
 
-export default VisibleDefault
+export default VisibleDefault;
