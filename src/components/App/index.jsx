@@ -9,7 +9,7 @@ import Main from '../layouts/Main';
 import './style.scss';
 
 const App = () => (
-  <div className="App">
+  <div className="app">
     <Router>
       <Main>
         <Switch>
