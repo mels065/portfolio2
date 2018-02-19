@@ -2,7 +2,6 @@
 
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
 
 const SRC_PATH = path.join(__dirname, '../src')
 const BUILD_PATH = path.join(__dirname, '../build')
@@ -53,8 +52,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: `public/index.html`
-    }),
-    new StylelintPlugin()
+    })
   ],
   resolve: {
     extensions: ['.js', '.jsx']

@@ -6,7 +6,7 @@ import { Container } from 'semantic-ui-react';
 import './style.scss';
 
 const Main = ({ children }) => (
-  <Container className="main" as="main" textAlign="center">
+  <Container className="Main" as="main" textAlign="center">
     {children}
   </Container>
 );
