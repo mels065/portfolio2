@@ -3,11 +3,13 @@ import { expect } from 'chai';
 import {
   incrementAction,
   decrementAction,
+  spinnerUpdateAction,
 } from '../../Counter';
 
 import {
   INCREMENT,
   DECREMENT,
+  SPINNER_UPDATE,
 } from '../../../constants/Counter';
 
 describe('incrementAction', () => {
@@ -28,4 +30,14 @@ describe('decrementAction', () => {
   it('assigns an `amount` value to payload', () => {
     expect(decrementAction(1).amount).to.equal(1);
   });
+});
+
+describe('spinnerUpdateAction', () => {
+  it(`has type ${SPINNER_UPDATE}`, () => {
+    expect(spinnerUpdateAction(5).type).to.equal(SPINNER_UPDATE);
+  });
+  
+  it('assigns an `newVal` value to payload', () => {
+    expect(spinnerUpdateAction(5).newVal).to.equal(5);
+  })
 });

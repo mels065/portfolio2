@@ -6,7 +6,7 @@ import NOT_FOUND_HEADING from '../../../constants/NotFound';
 import './style.scss';
 
 const NotFound = () => (
-  <div className="NotFound">
+  <div className="not-found">
     <Header as="h2" color="red" className="NotFound-heading">
       {NOT_FOUND_HEADING}
     </Header>
