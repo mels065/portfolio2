@@ -18,9 +18,9 @@ export const decrementAction = amount => (
   }
 );
 
-export const spinnerUpdateAction = newVal => (
+export const spinnerUpdateAction = newSpinnerVal => (
   {
     type: SPINNER_UPDATE,
-    newVal,
+    newSpinnerVal,
   }
 );

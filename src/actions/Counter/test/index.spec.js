@@ -38,6 +38,6 @@ describe('spinnerUpdateAction', () => {
   });
   
   it('assigns an `newVal` value to payload', () => {
-    expect(spinnerUpdateAction(5).newVal).to.equal(5);
+    expect(spinnerUpdateAction(5).newSpinnerVal).to.equal(5);
   })
 });
