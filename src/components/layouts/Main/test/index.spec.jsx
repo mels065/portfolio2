@@ -7,6 +7,6 @@ import Main from '../../Main';
 describe('<Main />', () => {
   it('renders', () => {
     const wrapper = shallow(<Main><div /></Main>);
-    expect(wrapper.hasClass('Main')).to.equal(true);
+    expect(wrapper.hasClass('main')).to.equal(true);
   });
 });

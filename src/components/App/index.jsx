@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import VisibleDefault from '../../containers/VisibleDefault';
+import Default from '../modules/Default';
 import NotFound from '../modules/NotFound';
 
 import Main from '../layouts/Main';
@@ -13,7 +13,7 @@ const App = () => (
     <Router>
       <Main>
         <Switch>
-          <Route exact path="/" component={VisibleDefault} />
+          <Route exact path="/" component={Default} />
           <Route component={NotFound} />
         </Switch>
       </Main>
