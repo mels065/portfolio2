@@ -19,7 +19,7 @@ const counterReducer = (
       return { ...state, counter: state.counter - action.amount };
     }
     case SPINNER_UPDATE: {
-      return {...state, spinnerVal: action.newSpinnerVal };
+      return { ...state, spinnerVal: action.newSpinnerVal };
     }
     default: {
       return state;
