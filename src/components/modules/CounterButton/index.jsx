@@ -9,7 +9,7 @@ const CounterButton = ({ spinnerVal, clickHandler, color }) => (
     <Button
         className="counter-btn"
         onClick={() => { clickHandler(spinnerVal) }}
-        color
+        color={color}
     />
 );
 

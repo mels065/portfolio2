@@ -10,7 +10,7 @@ import './style.scss';
 
 const CounterInput = ({ spinnerVal, incrementCounter, decrementCounter, onSpinnerChange }) => (
     <Container className="counter-input">
-        <CounterSpinner spinnerVal onSpinnerChange />
+        <CounterSpinner spinnerVal={spinnerVal} onSpinnerChange={onSpinnerChange} />
         <CounterButton spinnerVal onClick={incrementCounter} color="green" />
         <CounterButton spinnerVal onClick={decrementCounter} color="red" />
     </Container>
