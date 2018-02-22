@@ -8,7 +8,12 @@ import CounterButton from '../CounterButton';
 
 import './style.scss';
 
-const CounterInput = ({ spinnerVal, incrementCounter, decrementCounter, onSpinnerChange }) => (
+const CounterInput = ({
+  spinnerVal,
+  incrementCounter,
+  decrementCounter,
+  onSpinnerChange,
+}) => (
   <Container className="counter-input">
     <CounterSpinner spinnerVal={spinnerVal} onSpinnerChange={onSpinnerChange} />
     <CounterButton
