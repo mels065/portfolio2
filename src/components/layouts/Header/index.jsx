@@ -1,15 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Container } from 'semantic-ui-react';
 
-import PageHeading from '../../modules/PageHeading';
-
 import './style.scss';
 
-const CounterSpinner = () => (
+const Header = ({ children }) => (
   <Container as="header" className="header">
-    <PageHeading />
+    {children}
   </Container>
 );
 
-export default CounterSpinner;
+export default Header;
+
+Header.propTypes = {
+  children: PropTypes.element.isRequired,
+};
