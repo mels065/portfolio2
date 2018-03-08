@@ -4,9 +4,11 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import PageHeading from '../modules/PageHeading';
 import Default from '../modules/Default';
 import NotFound from '../modules/NotFound';
+import Copyright from '../modules/Copyright';
 
 import Header from '../layouts/Header';
 import Main from '../layouts/Main';
+import Footer from '../layouts/Footer';
 
 import './style.scss';
 
@@ -22,13 +24,17 @@ const App = () => (
     <Router>
       <Main>
         <Switch>
-          <Route exact path="/" component={Header} />
-        </Switch>
-        <Switch>
           <Route exact path="/" component={Default} />
           <Route component={NotFound} />
         </Switch>
       </Main>
+    </Router>
+    <Router>
+      <Footer>
+        <Switch>
+          <Route exact path="/" component={Copyright} />
+        </Switch>
+      </Footer>
     </Router>
   </div>
 );

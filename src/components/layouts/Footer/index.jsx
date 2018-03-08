@@ -3,20 +3,18 @@ import PropTypes from 'prop-types';
 
 import { Container } from 'semantic-ui-react';
 
-import './style.scss';
-
-const Header = ({ children }) => (
-  <Container as="header" className="header">
+const Footer = ({ children }) => (
+  <Container as="footer" className="footer">
     {children}
   </Container>
 );
 
-export default Header;
+export default Footer;
 
-Header.propTypes = {
+Footer.propTypes = {
   children: PropTypes.element,
 };
 
-Header.defaultProps = {
+Footer.defaultProps = {
   children: null,
 };
