@@ -6,6 +6,7 @@ import Counter from '../../Counter';
 
 describe('<Counter />', () => {
     const props = {
+        counter: 0,
         spinnerVal: 1,
         incrementCounter: () => {},
         decrementCounter: () => {},
