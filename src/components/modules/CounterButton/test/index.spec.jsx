@@ -7,6 +7,7 @@ import CounterButton from '../../CounterButton';
 
 describe('<CounterButton />', () => {
     const props = {
+        text: "Test",
         spinnerVal: 1,
         clickHandler: () => {}
     }
