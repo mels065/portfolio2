@@ -1,16 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import DefaultContainer from '../../modules/DefaultContainer';
+import NotFound from '../../modules/NotFound';
 
 import './style.scss';
 
-const Content = ({ children }) => (
+const Content = () => (
   <main className="content">
-    {children}
+    <Router>
+      <Switch>
+        <Route exact path="/" component={DefaultContainer} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
   </main>
 );
 
 export default Content;
-
-Content.propTypes = {
-  children: PropTypes.element.isRequired,
-};

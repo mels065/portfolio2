@@ -1,20 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import PageHeading from '../../modules/PageHeading';
 
 import './style.scss';
 
-const Header = ({ children }) => (
+const Header = () => (
   <header className="header">
-    {children}
+    <Router>
+      <Switch>
+        <Route exact path="/" component={PageHeading} />
+      </Switch>
+    </Router>
   </header>
 );
 
 export default Header;
-
-Header.propTypes = {
-  children: PropTypes.element,
-};
-
-Header.defaultProps = {
-  children: null,
-};

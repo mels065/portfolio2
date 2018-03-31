@@ -1,18 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const Footer = ({ children }) => (
+import Copyright from '../../modules/Copyright';
+
+const Footer = () => (
   <footer className="footer">
-    {children}
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Copyright} />
+      </Switch>
+    </Router>
   </footer>
 );
 
 export default Footer;
-
-Footer.propTypes = {
-  children: PropTypes.element,
-};
-
-Footer.defaultProps = {
-  children: null,
-};
