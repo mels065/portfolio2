@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container } from 'semantic-ui-react';
-
 import './style.scss';
 
 const Header = ({ children }) => (
-  <Container as="header" className="header">
+  <header className="header">
     {children}
-  </Container>
+  </header>
 );
 
 export default Header;

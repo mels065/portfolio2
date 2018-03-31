@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { Header } from 'semantic-ui-react';
-
 import './style.scss';
 
 const PageHeading = () => (
-  <Header className="page-heading" as="h1">
+  <h1 className="page-heading">
     Mels React Boilerplate
-  </Header>
+  </h1>
 );
 
 export default PageHeading;

@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Header } from 'semantic-ui-react';
-
 import './style.scss';
 
 const CounterDisplay = ({ counter }) => (
-  <Header className="counter-display" as="h2">
+  <h2 className="counter-display">
     {counter}
-  </Header>
+  </h2>
 );
 
 export default CounterDisplay;

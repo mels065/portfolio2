@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container } from 'semantic-ui-react';
-
 import CounterInput from '../CounterInput';
 import CounterDisplay from '../CounterDisplay';
 
@@ -15,7 +13,7 @@ const Counter = ({
   decrementCounter,
   onSpinnerChange,
 }) => (
-  <Container className="counter">
+  <div className="counter">
     <CounterDisplay counter={counter} />
     <CounterInput
       spinnerVal={spinnerVal}
@@ -23,7 +21,7 @@ const Counter = ({
       decrementCounter={decrementCounter}
       onSpinnerChange={onSpinnerChange}
     />
-  </Container>
+  </div>
 );
 
 export default Counter;

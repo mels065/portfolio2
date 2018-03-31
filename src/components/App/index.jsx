@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import PageHeading from '../modules/PageHeading';
-import Default from '../modules/Default';
+import DefaultContainer from '../modules/DefaultContainer';
 import NotFound from '../modules/NotFound';
 import Copyright from '../modules/Copyright';
 
@@ -24,7 +24,7 @@ const App = () => (
     <Router>
       <Main>
         <Switch>
-          <Route exact path="/" component={Default} />
+          <Route exact path="/" component={DefaultContainer} />
           <Route component={NotFound} />
         </Switch>
       </Main>

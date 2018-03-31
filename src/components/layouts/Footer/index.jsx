@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container } from 'semantic-ui-react';
-
 const Footer = ({ children }) => (
-  <Container as="footer" className="footer">
+  <footer className="footer">
     {children}
-  </Container>
+  </footer>
 );
 
 export default Footer;

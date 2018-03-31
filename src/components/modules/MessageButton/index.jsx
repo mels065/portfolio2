@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Button } from 'semantic-ui-react';
-
 import {
   MESSAGE_HELLO_MSG,
 } from '../../../constants/Message';
@@ -10,17 +8,16 @@ import {
 import './style.scss';
 
 const MessageButton = ({ message, onHelloClick, onByeClick }) => (
-  <Button
+  <button
     className="message-btn"
     onClick={
       message === MESSAGE_HELLO_MSG ?
         onByeClick :
         onHelloClick
     }
-    primary
   >
     Change Message
-  </Button>
+  </button>
 );
 
 export default MessageButton;

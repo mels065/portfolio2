@@ -1,17 +1,15 @@
 import React from 'react';
 
-import { Container } from 'semantic-ui-react';
-
 import VisibleMessage from '../../../containers/VisibleMessage';
 import VisibleCounter from '../../../containers/VisibleCounter';
 
 import './style.scss';
 
-const Default = () => (
-  <Container className="default">
+const DefaultContainer = () => (
+  <div className="default">
     <VisibleMessage />
     <VisibleCounter />
-  </Container>
+  </div>
 );
 
-export default Default;
+export default DefaultContainer;

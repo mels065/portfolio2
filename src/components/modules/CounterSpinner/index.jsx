@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Input } from 'semantic-ui-react';
-
 import {
   SPINNER_MIN,
   SPINNER_MAX,
@@ -11,7 +9,7 @@ import {
 import './style.scss';
 
 const CounterSpinner = ({ spinnerVal, onSpinnerChange }) => (
-  <Input
+  <input
     className="counter-spinner"
     onChange={event => onSpinnerChange(Number(event.target.value))}
     type="number"

@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container } from 'semantic-ui-react';
-
 import './style.scss';
 
 const Main = ({ children }) => (
-  <Container className="main" as="main" textAlign="center">
+  <main className="main">
     {children}
-  </Container>
+  </main>
 );
 
 export default Main;
