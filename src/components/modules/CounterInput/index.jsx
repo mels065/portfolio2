@@ -12,19 +12,17 @@ const CounterInput = ({
   decrementCounter,
   onSpinnerChange,
 }) => (
-  <div className="counter-input">
+  <div className="counter--input">
     <CounterSpinner spinnerVal={spinnerVal} onSpinnerChange={onSpinnerChange} />
     <CounterButton
       text="Increment"
       spinnerVal={spinnerVal}
       clickHandler={incrementCounter}
-      color="green"
     />
     <CounterButton
       text="Decrement"
       spinnerVal={spinnerVal}
       clickHandler={decrementCounter}
-      color="red"
     />
   </div>
 );

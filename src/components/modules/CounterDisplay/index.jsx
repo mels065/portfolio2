@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 const CounterDisplay = ({ counter }) => (
-  <h2 className="counter-display">
+  <h2 className="counter--display">
     {counter}
   </h2>
 );

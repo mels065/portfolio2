@@ -17,6 +17,6 @@ describe('<DefaultContainer />', () => {
 
   it('renders', () => {
     const wrapper = shallow(<DefaultContainer {...props} />);
-    expect(wrapper.hasClass('default')).to.equal(true);
+    expect(wrapper.hasClass('default-container')).to.equal(true);
   });
 });

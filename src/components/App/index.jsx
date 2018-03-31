@@ -7,7 +7,7 @@ import NotFound from '../modules/NotFound';
 import Copyright from '../modules/Copyright';
 
 import Header from '../layouts/Header';
-import Main from '../layouts/Main';
+import Content from '../layouts/Content';
 import Footer from '../layouts/Footer';
 
 import './style.scss';
@@ -22,12 +22,12 @@ const App = () => (
       </Header>
     </Router>
     <Router>
-      <Main>
+      <Content>
         <Switch>
           <Route exact path="/" component={DefaultContainer} />
           <Route component={NotFound} />
         </Switch>
-      </Main>
+      </Content>
     </Router>
     <Router>
       <Footer>

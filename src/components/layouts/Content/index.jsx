@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import './style.scss';
 
-const Main = ({ children }) => (
-  <main className="main">
+const Content = ({ children }) => (
+  <main className="content">
     {children}
   </main>
 );
 
-export default Main;
+export default Content;
 
-Main.propTypes = {
+Content.propTypes = {
   children: PropTypes.element.isRequired,
 };

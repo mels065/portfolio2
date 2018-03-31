@@ -6,7 +6,7 @@ import VisibleCounter from '../../../containers/VisibleCounter';
 import './style.scss';
 
 const DefaultContainer = () => (
-  <div className="default">
+  <div className="default-container">
     <VisibleMessage />
     <VisibleCounter />
   </div>

@@ -9,7 +9,7 @@ const CounterButton = ({
   clickHandler,
 }) => (
   <button
-    className="counter-btn"
+    className="counter--btn"
     onClick={() => { clickHandler(Number(spinnerVal)); }}
   >
     {text}

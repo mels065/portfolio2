@@ -7,10 +7,7 @@ const SRC_PATH = path.join(__dirname, '../src')
 const BUILD_PATH = path.join(__dirname, '../build')
 
 module.exports = {
-  entry: {
-    app: [`${SRC_PATH}/index.jsx`],
-    vendor: ['semantic-ui-react']
-  },
+  entry: `${SRC_PATH}/index.jsx`,
   output: {
     path: BUILD_PATH,
     publicPath: '/'

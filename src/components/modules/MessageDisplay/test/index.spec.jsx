@@ -15,7 +15,7 @@ describe('<MessageDisplay />', () => {
 
   it('renders', () => {
     const wrapper = shallow(<MessageDisplay {...props} />);
-    expect(wrapper.hasClass('message-display')).to.equal(true);
+    expect(wrapper.hasClass('message--display')).to.equal(true);
   });
 
   it('displays text', () => {

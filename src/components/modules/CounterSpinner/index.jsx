@@ -10,7 +10,7 @@ import './style.scss';
 
 const CounterSpinner = ({ spinnerVal, onSpinnerChange }) => (
   <input
-    className="counter-spinner"
+    className="counter--spinner"
     onChange={event => onSpinnerChange(Number(event.target.value))}
     type="number"
     value={spinnerVal}

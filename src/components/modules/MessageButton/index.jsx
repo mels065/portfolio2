@@ -9,7 +9,7 @@ import './style.scss';
 
 const MessageButton = ({ message, onHelloClick, onByeClick }) => (
   <button
-    className="message-btn"
+    className="message--btn"
     onClick={
       message === MESSAGE_HELLO_MSG ?
         onByeClick :

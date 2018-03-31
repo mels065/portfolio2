@@ -11,7 +11,7 @@ describe('<CounterDisplay />', () => {
 
   it('renders', () => {
     const wrapper = shallow(<CounterDisplay {...props} />);
-    expect(wrapper.hasClass('counter-display')).to.equal(true);
+    expect(wrapper.hasClass('counter--display')).to.equal(true);
   });
 
   it('displays number', () => {

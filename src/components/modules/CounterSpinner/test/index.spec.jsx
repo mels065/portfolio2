@@ -13,7 +13,7 @@ describe('<CounterSpinner />', () => {
 
   it('renders', () => {
     const wrapper = shallow(<CounterSpinner {...props} />);
-    expect(wrapper.hasClass('counter-spinner')).to.equal(true);
+    expect(wrapper.hasClass('counter--spinner')).to.equal(true);
   });
 
   it('calls `onSpinnerChange` when change event is triggered', () => {

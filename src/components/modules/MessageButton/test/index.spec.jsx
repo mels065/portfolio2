@@ -19,7 +19,7 @@ describe('<MessageButton />', () => {
 
   it('renders', () => {
     const wrapper = shallow(<MessageButton {...props} />);
-    expect(wrapper.hasClass('message-btn')).to.equal(true);
+    expect(wrapper.hasClass('message--btn')).to.equal(true);
   });
 
   it('calls onByeClick when clicked with "Hello World" as the message', () => {
