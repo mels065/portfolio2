@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
   MESSAGE_HELLO_MSG,
-} from '../../../constants/Message';
+} from '../../../../constants/Message';
 
 import './style.scss';
 

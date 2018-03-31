@@ -6,7 +6,7 @@ import MessageDisplay from '../../MessageDisplay';
 
 import {
   MESSAGE_HELLO_MSG,
-} from '../../../../constants/Message';
+} from '../../../../../constants/Message';
 
 describe('<MessageDisplay />', () => {
   const props = {

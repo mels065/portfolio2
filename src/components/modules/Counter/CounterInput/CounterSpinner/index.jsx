@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {
   SPINNER_MIN,
   SPINNER_MAX,
-} from '../../../constants/Counter';
+} from '../../../../../constants/Counter';
 
 import './style.scss';
 

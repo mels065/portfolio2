@@ -8,7 +8,7 @@ import MessageButton from '../../MessageButton';
 import {
   MESSAGE_HELLO_MSG,
   MESSAGE_BYE_MSG,
-} from '../../../../constants/Message';
+} from '../../../../../constants/Message';
 
 describe('<MessageButton />', () => {
   const props = {

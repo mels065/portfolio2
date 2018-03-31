@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import MessageDisplay from '../MessageDisplay';
-import MessageButton from '../MessageButton';
+import MessageDisplay from './MessageDisplay';
+import MessageButton from './MessageButton';
 
 import './style.scss';
 

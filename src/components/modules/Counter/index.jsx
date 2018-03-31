@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CounterInput from '../CounterInput';
-import CounterDisplay from '../CounterDisplay';
+import CounterInput from './CounterInput';
+import CounterDisplay from './CounterDisplay';
 
 import './style.scss';
 

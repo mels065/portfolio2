@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CounterSpinner from '../CounterSpinner';
-import CounterButton from '../CounterButton';
+import CounterSpinner from './CounterSpinner';
+import CounterButton from './CounterButton';
 
 import './style.scss';
 

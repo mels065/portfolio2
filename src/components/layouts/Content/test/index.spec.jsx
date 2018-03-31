@@ -2,11 +2,11 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
 
-import Main from '../../Main';
+import Content from '../../Content';
 
 describe('<Main />', () => {
   it('renders', () => {
-    const wrapper = shallow(<Main><div /></Main>);
-    expect(wrapper.hasClass('main')).to.equal(true);
+    const wrapper = shallow(<Content><div /></Content>);
+    expect(wrapper.hasClass('content')).to.equal(true);
   });
 });
