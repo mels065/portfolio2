@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Copyright from '../../modules/Copyright';
 
+import './style.scss';
+
 const Footer = () => (
   <footer className="footer">
     <Router>

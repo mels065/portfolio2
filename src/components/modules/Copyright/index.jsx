@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './style.scss';
+
 const Copyright = () => (
   <div className="copyright">
     Brandon Mellus &copy;{

@@ -1,3 +1,6 @@
+@import '../../../sass/color';
+
 .header {
+  background-color: $background-color;
   padding: 40px;
 }
