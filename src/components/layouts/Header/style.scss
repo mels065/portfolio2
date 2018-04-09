@@ -1,6 +1,7 @@
 @import '../../../sass/color';
 
 .header {
-  background-color: $background-color;
+  background-color: $banner-background-color;
+  color: $banner-text-color;
   padding: 40px;
 }
