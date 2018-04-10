@@ -1,0 +1,10 @@
+@import '../../../../sass/color';
+@import '../../../../sass/spacing';
+
+.message--display {
+  background: $banner-background-color;
+  color: $banner-text-color;
+  margin: $default-components-margin;
+  margin-top: $default-components-margin-top;
+  width: $default-components-width;
+}
