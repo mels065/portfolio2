@@ -1,8 +1,14 @@
-import { createStore, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
+import { init } from '@rematch/core';
+import contacts from '../models/contacts';
+import projects from '../models/projects';
+import skills from '../models/skills';
 
-import reducers from '../reducers';
+const store = init({
+  models: {
+    contacts,
+    projects,
+    skills,
+  },
+});
 
-const middleware = applyMiddleware(logger);
-
-export default createStore(reducers, middleware);
+export default store;
