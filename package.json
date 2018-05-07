@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@rematch/core": "^0.6.0",
+    "babel-preset-es2015": "^6.24.1",
     "prop-types": "^15.6.1",
     "react": "^15.5.3",
     "react-dom": "15.5.3",

@@ -1,5 +1,6 @@
-import { TYPE_OF_PROJECT } from '../constants';
 import path from 'path';
+
+import { TYPE_OF_PROJECT } from '../constants';
 
 const { FRONT_END, BACK_END, FULL_STACK } = TYPE_OF_PROJECT;
 
