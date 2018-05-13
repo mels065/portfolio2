@@ -8,7 +8,15 @@ import './style.scss';
 
 const NavBar = () => (
   <nav className="nav-bar">
-    {LINKS.map(link => <NavBarLink {...link} />)}
+    <ul>
+      {LINKS.map(link => (
+        <NavBarLink
+          key={link.text.toLowerCase().split(' ').join('-')}
+          {...link}
+        />
+      ))
+    }
+    </ul>
   </nav>
 );
 

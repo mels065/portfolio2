@@ -1,8 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './style.scss';
+
 const NavBarLink = ({ text, link }) => (
-  <a className="nav-bar-link" href={link}>{text}</a>
+  <li className="nav-bar-link">
+    <a href={link}>{text}</a>
+  </li>
 );
 
 export default NavBarLink;
