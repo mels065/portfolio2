@@ -5,7 +5,7 @@ import aboutMeTextLines from '../../../data/about-me';
 import './style.scss';
 
 const AboutMe = () => (
-  <section className="about-me">
+  <section className="about-me" id="AboutMe">
     <h3>About Me</h3>
     {aboutMeTextLines}
   </section>

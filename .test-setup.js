@@ -3,7 +3,8 @@ import { JSDOM } from 'jsdom';
 import Adapter from 'enzyme-adapter-react-15';
 
 import register from 'ignore-styles';
-register(['.scss']);
+
+register(['.scss', '.jpg']);
 
 configure({ adapter: new Adapter() });
 
@@ -16,7 +17,7 @@ const doc = win.document;
 global.document = doc;
 global.window = win;
 
-for (let key in window) {
+for (const key in window) {
   if (!window.hasOwnProperty(key) || key in global) continue;
   global[key] = window[key];
 }

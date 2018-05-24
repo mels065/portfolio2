@@ -1,16 +1,16 @@
 /* eslint-disable */
 
-const path = require('path')
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const SRC_PATH = path.join(__dirname, '../src')
-const BUILD_PATH = path.join(__dirname, '../build')
+const SRC_PATH = path.join(__dirname, '../src');
+const BUILD_PATH = path.join(__dirname, '../build');
 
 module.exports = {
   entry: `${SRC_PATH}/index.jsx`,
   output: {
     path: BUILD_PATH,
-    publicPath: '/'
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -21,9 +21,9 @@ module.exports = {
         use: {
           loader: 'eslint-loader',
           options: {
-            emitError: true
-          }
-        }
+            emitError: true,
+          },
+        },
       },
       {
         test: /\.jsx?$/,
@@ -31,27 +31,27 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
-          }
-        }
+            presets: ['es2015', 'react'],
+          },
+        },
       },
       {
         test: /\.scss$/,
         include: SRC_PATH,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' },
-          { loader: 'sass-loader' }
-        ]
-      }
-    ]
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+      },
+      {
+        test: /\.jpg$/,
+        use: ['file-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: `public/index.html`
-    })
+      template: `public/index.html`,
+    }),
   ],
   resolve: {
-    extensions: ['.js', '.jsx']
-  }
+    extensions: ['.js', '.jsx'],
+  },
 };
