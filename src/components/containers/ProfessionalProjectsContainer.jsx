@@ -2,8 +2,12 @@ import { connect } from 'react-redux';
 
 import Projects from '../modules/Projects';
 
+const {
+  TYPE_OF_PROJECT_GROUP: { PROFESSIONAL_PROJECTS },
+} = require('../../constants');
+
 const mapState = ({ professionalProjects }) => ({
-  type: 'Professional Projects',
+  type: PROFESSIONAL_PROJECTS,
   projects: professionalProjects.projects,
   currentFilter: professionalProjects.currentFilter,
 });
