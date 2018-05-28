@@ -4,19 +4,17 @@ import filterFactory from '../filter';
 
 const {
   TYPE_OF_PROJECT: {
-    ANY,
-    FRONT_END,
-    BACK_END,
-    FULL_STACK,
+    ANY, FRONT_END, BACK_END, FULL_STACK,
   },
 } = require('../../../constants');
 
 describe('filter helper (models)', () => {
-  const filterObj = filterFactory();
+  const filterObj = filterFactory([]);
 
   it('has state', () => {
     expect(filterObj.state).to.deep.equal({
       currentFilter: ANY,
+      projects: [],
     });
   });
 
@@ -34,5 +32,5 @@ describe('filter helper (models)', () => {
 
   it('has filterFullStack reducer', () => {
     expect(filterObj.reducers.filterFullStack()).to.equal(FULL_STACK);
-  })
+  });
 });

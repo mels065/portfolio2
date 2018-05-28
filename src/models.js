@@ -1,5 +1,7 @@
 import filterFactory from './helpers/models/filter';
 
-export const personalProjects = filterFactory();
+import { professionalProjectData, personalProjectData } from './data/projects';
 
-export const professionalProjects = filterFactory();
+export const personalProjects = filterFactory(personalProjectData);
+
+export const professionalProjects = filterFactory(professionalProjectData);
