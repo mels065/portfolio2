@@ -2,14 +2,34 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Project from './Project';
+import ProjectFilterPanel from './ProjectFilterPanel';
 
 import './style.scss';
 
-const Projects = ({ type, projects }) => (
+const {
+  TYPE_OF_PROJECT: { ANY },
+} = require('../../../constants');
+
+const Projects = ({
+  type,
+  projects,
+  currentFilter,
+  removeFilter,
+  filterFrontEnd,
+  filterBackEnd,
+  filterFullStack,
+}) => (
   <section className="projects" id={type.split(' ').join('')}>
     <h3>{type}</h3>
+    <ProjectFilterPanel {...{
+ removeFilter, filterFrontEnd, filterBackEnd, filterFullStack,
+}}
+    />
     <ul>
-      {projects.map(projectData => (
+      {(currentFilter === ANY
+        ? projects
+        : projects.filter(projectData => projectData.type === currentFilter)
+      ).map(projectData => (
         <Project
           key={projectData.name
             .toLowerCase()
@@ -34,4 +54,9 @@ Projects.propTypes = {
     demoURL: PropTypes.string.isRequired,
     repoURL: PropTypes.string.isRequired,
   })).isRequired,
+  currentFilter: PropTypes.string.isRequired,
+  removeFilter: PropTypes.func.isRequired,
+  filterFrontEnd: PropTypes.func.isRequired,
+  filterBackEnd: PropTypes.func.isRequired,
+  filterFullStack: PropTypes.func.isRequired,
 };
